@@ -49,13 +49,13 @@ app.get('/callback', function(req, res) {
   })
 })
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 8888
 
 const init = () => {
   db.sync()
   app.listen(PORT, () => {
     console.log(
-      `Listening on port ${PORT}. Go /login to initiate authentication flow.`
+      `Listening on port ${8888}. Go /login to initiate authentication flow.`
     )
   })
 }
