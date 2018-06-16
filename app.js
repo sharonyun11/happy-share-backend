@@ -6,6 +6,10 @@ const db = require('./db/db')
 
 const app = express()
 
+// API Routes
+app.use('/api', require('./api'))
+
+// Authorization
 const redirect_uri =
   process.env.REDIRECT_URI || 'http://localhost:8888/callback'
 

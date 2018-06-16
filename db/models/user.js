@@ -6,10 +6,10 @@ const User = db.define('user', {
     type: Sequelize.STRING
   },
   spotifyId: {
-    type: Sequelize.INTEGER
+    type: Sequelize.STRING
   },
   playlistId: {
-    type: Sequelize.INTEGER
+    type: Sequelize.STRING
   }
 })
 
