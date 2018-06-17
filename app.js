@@ -11,7 +11,8 @@ app.use('/api', require('./api'))
 
 // Authorization
 const redirect_uri =
-  process.env.REDIRECT_URI || 'http://localhost:8888/callback'
+  process.env.REDIRECT_URI ||
+  'https://happy-share-backend.herokuapp.com/callback'
 
 app.get('/login', function(req, res) {
   res.redirect(
